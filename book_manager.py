@@ -13,9 +13,7 @@ class Book:
         return f"Book({self.isbn}, '{self.title}', '{self.author}')"
     
 class BookManager:
-    def __init__(self):
-        self.books = []
-
+    
     def add_book(self, book):
         if book not in self.books:
             self.books.append(book)
